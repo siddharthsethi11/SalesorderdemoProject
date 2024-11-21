@@ -11,15 +11,11 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
 services:
-- serviceName: project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:sales_Db
+- serviceName: project.salesorderdemo.integrations:createCustomerOrder
   packages:
   - name: SalesOrderdemoProject
     version: "1.0"
 - serviceName: project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:insertSalesOrderDetail
-  packages:
-  - name: SalesOrderdemoProject
-    version: "1.0"
-- serviceName: project.salesorderdemo.integrations:createCustomerOrder
   packages:
   - name: SalesOrderdemoProject
     version: "1.0"
