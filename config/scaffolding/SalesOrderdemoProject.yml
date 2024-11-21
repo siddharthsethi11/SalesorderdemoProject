@@ -7,3 +7,66 @@ packages:
   gitUrl: https://github.com/siddharthsethi11
   gitUsername: siddharthsethi11
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: softwareag
+services:
+- serviceName: project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:sales_Db
+  packages:
+  - name: SalesOrderdemoProject
+    version: "1.0"
+- serviceName: project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:insertSalesOrderDetail
+  packages:
+  - name: SalesOrderdemoProject
+    version: "1.0"
+- serviceName: project.salesorderdemo.integrations:createCustomerOrder
+  packages:
+  - name: SalesOrderdemoProject
+    version: "1.0"
+configurationVariables:
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionSettings.user
+  : admin_wm
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionSettings.portNumber
+  : "1433"
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionSettings.password
+  : "{AES}nGRjY/sDrzYVMaB7/MTFuw=="
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionSettings.databaseName
+  : demo
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionSettings.keyStore
+  : ""
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionSettings.trustStore
+  : ""
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionSettings.serverName
+  : host.docker.internal
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionEnabled
+  : "false"
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.SalesOrderdemoProject.project.salesorderdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.sales_Db.connectionSettings.dbType
+  : MSSQL
