@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: SalesOrderdemoProject
+  gitServerName: siddharthsethi11
+  gitUrl: https://github.com/siddharthsethi11
+  gitUsername: siddharthsethi11
+  gitBranch: main
